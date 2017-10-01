@@ -43,6 +43,8 @@ task test_integration(type: Test) {
     classpath = sourceSets.test_integration.runtimeClasspath
 }
 
+check.dependsOn test_integration
+
 task buildDocker(type: Docker, dependsOn: build) {
     applicationName = jar.baseName
     dockerfile = file('Dockerfile')
