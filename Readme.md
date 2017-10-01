@@ -2,13 +2,13 @@
 Survey service manager backend. Works with surveys, questions and answers. For more info see #Protocol.
 
 ## Run
-Ensure that [PostgreSql](https://www.postgresql.org/) is accessible before running the service.  
-Postrges access url is specified in application.properties for `spring.datasource.url`
+Ensure that [MongoDb](https://www.mongodb.com/) is accessible before running the service.  
+Access urls are specified in application.properties for `spring.data.mongodb.uri` for mongodb.
 
 ### In docker
 
     sudo ./gradlew build buildDocker
-    sudo docker run -p 8080:8080 -t com.surveyor.manager
+    sudo docker run -p 8080:8080 -t com.surveyor.statistics
 
 ### In OS
 
