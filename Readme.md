@@ -20,8 +20,12 @@ GET __/question/{id}__ where `{id}` is of the question you would like to get sta
 Response:
 
     {
-        "question_id" : "id from request",
-        "answer_id1" : N
-        "answer_id2" : M
+        "result" : true,
+        "response" :
+        {
+            "question_id" : "id from request",
+            "answer_id1" : N
+            "answer_id2" : M
+        }
     }
 Where `N` and `M` are integers.
